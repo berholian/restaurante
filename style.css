@@ -1,0 +1,995 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Alex+Brush);
+/*_ _ _ _ _ _ _ /  bloques: \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ 
+
+
+LOGO - NAV - SECTION - ROW & COL - FORM - GALERY - HOME-INDEX - FOOTER - SOCIAL-FONTELLO - EXTRAS - _TOP - _BOTTOM
+
+*/
+/*$color_bg_dark_alt 		: #72838B;*/
+/*$color_bg_light_alt 		: darken($color_bg_light,5);*/
+/*1120px*/
+/*688 px*/
+/*464 px*/
+/*240 px*/
+/*$logo_ico                   : ;*/
+/*@import 'fragmentos/normalize';*/
+/*@import 'fragmentos/reset';
+/*@import 'fragmentos/general';*/
+.col1 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 6.25%;
+}
+
+.col2 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 14.58333%;
+}
+
+.col3 {
+  float: left;
+  margin: .5em 1.04167%;
+  width: 22.91667%;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+.col4 {
+  float: left;
+  margin: .1em 1.04167%;
+  width: 31.25%;
+}
+
+.col5 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 39.58333%;
+}
+
+.col6 {
+  /*float: left*/
+  margin: 0 1.04167%;
+  width: 47.91667%;
+}
+
+.col7 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 56.25%;
+}
+
+.col8 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 64.58333%;
+}
+
+.col9 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 72.91667%;
+}
+
+.col10 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 81.25%;
+}
+
+.col11 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 89.58333%;
+}
+
+.col12 {
+  float: left;
+  margin: 0 1.04167%;
+  width: 97.91667%;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello.eot?9998728");
+  src: url("fonts/fontello.eot?9998728#iefix") format("embedded-opentype"), url("fonts/fontello.woff?9998728") format("woff"), url("fonts/fontello.ttf?9998728") format("truetype"), url("fonts/fontello.svg?9998728#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, "Miriad pro", Arial, "sans-serif";
+  color: black;
+  padding: .3em;
+  background: url(images/bargruond2.jpg);
+}
+
+ul, ol, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  background: #262626;
+  padding: 1em 0 0 0;
+}
+
+header {
+  background: url(images/vintage.png) no-repeat bottom;
+  background-size: cover;
+}
+@media screen and (max-width: 43em) {
+  header {
+    background: url(images/vintage-medium.jpg) no-repeat bottom;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 29em) {
+  header {
+    background: url(images/vintage-small.jpg) no-repeat bottom;
+    background-size: cover;
+  }
+}
+
+/*_ _ _ _ _ _ _ _ _/  LOGO  \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+.heroe {
+  height: 20em;
+  overflow: visible;
+}
+.heroe h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Alex Brush", Arial, sans-serif;
+  color: white;
+  line-height: 3em;
+  display: block;
+  background-size: cover;
+  height: 2em;
+  margin-bottom: .2em;
+}
+.heroe h1 a {
+  text-transform: capitalize;
+  font-family: "Alex Brush", Arial, sans-serif;
+  color: white;
+  display: inline-block;
+  background-color: rgba(49, 58, 226, 0.1);
+  padding: 0 .625em;
+  border-radius: 50%;
+  box-shadow: inset -3px 2px 3px rgba(255, 255, 255, 0.4);
+}
+.heroe h1 a:active {
+  background: -webkit-gradient(radial, 0 0, 0 100%, from(white), to(rgba(49, 58, 226, 0.1)));
+  background: -webkit-radial-gradient(white, rgba(49, 58, 226, 0.1));
+  background: -moz-radial-gradient(white, rgba(49, 58, 226, 0.1));
+  background: -o-radial-gradient(white, rgba(49, 58, 226, 0.1));
+  background: radial-gradient(white, rgba(49, 58, 226, 0.1));
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: -3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 43em) {
+  .heroe h1 {
+    line-height: 2em;
+    height: 3em;
+    margin-bottom: .2em;
+  }
+}
+@media screen and (max-width: 29em) {
+  .heroe h1 {
+    line-height: 1.2em;
+    height: 3em;
+    margin-bottom: .2em;
+  }
+}
+@media screen and (max-width: 15em) {
+  .heroe h1 {
+    line-height: 1em;
+    height: 3em;
+    margin-bottom: .2em;
+  }
+}
+
+.logo {
+  width: 121px;
+  height: 230px;
+  background: url(images/logoAmari.png) rgba(0, 0, 0, 0.3) no-repeat center;
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+  top: 1em;
+  border-radius: 30% 0 40% 0;
+}
+.logo a {
+  text-align: center;
+  font-size: 1.2em;
+  color: #FFF;
+  text-decoration: none;
+  line-height: 2em;
+  padding: 6em 1em;
+  display: block;
+  text-indent: -9999px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 70em) {
+  .logo {
+    position: absolute;
+    top: 2em;
+    left: 250px;
+  }
+}
+
+/*_ _ _ _ _ _ _ _ _/  NAV  \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+nav {
+  text-align: right;
+  color: white;
+  margin-right: 2%;
+  height: 5em;
+  line-height: 3em;
+  padding-top: 1em;
+}
+nav ul {
+  display: block;
+}
+nav ul li {
+  display: inline-block;
+  background-color: rgba(49, 58, 226, 0.1);
+  padding: 0 .650em;
+  /*border-radius: 28px;*/
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  /*border-left: 1px solid rgba(0,0,0,.2);*/
+  box-shadow: inset -3px 2px 3px rgba(255, 255, 255, 0.4), -3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+nav ul li a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8em;
+  padding: .2em;
+}
+nav li:active {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background: -webkit-gradient(radial, 0 0, 0 100%, from(white), to(rgba(49, 58, 226, 0.1)));
+  background: -webkit-radial-gradient(white, rgba(49, 58, 226, 0.1));
+  background: -moz-radial-gradient(white, rgba(49, 58, 226, 0.1));
+  background: -o-radial-gradient(white, rgba(49, 58, 226, 0.1));
+  background: radial-gradient(white, rgba(49, 58, 226, 0.1));
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.4) inset, 0 1px 3px rgba(0, 0, 0, 0.6) inset;
+}
+@media screen and (max-width: 43em) {
+  nav .mv {
+    display: none;
+  }
+}
+@media screen and (max-width: 415px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 15em) {
+  nav {
+    display: none;
+  }
+}
+
+/*-----------/ mini-NAV \----------*/
+.mini {
+  display: none;
+  line-height: 3.2em;
+  margin: .5em  auto;
+  width: 85%;
+}
+.mini ul {
+  display: none;
+}
+.mini ul a {
+  color: white;
+  font-family: "Oswald", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  padding: .2em;
+}
+@media (max-width: 415px) {
+  .mini {
+    display: block;
+    height: 3em;
+    float: none;
+  }
+  .mini li {
+    margin-bottom: .1em;
+    float: none;
+    text-align: center;
+    background-color: rgba(49, 58, 226, 0.1);
+    padding: 0 .625em;
+    border-radius: 28px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset -3px 2px 3px rgba(255, 255, 255, 0.4), -3px 3px 1px rgba(0, 0, 0, 0.2);
+  }
+  .mini li:active {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: -webkit-gradient(radial, 0 0, 0 100%, from(white), to(rgba(49, 58, 226, 0.1)));
+    background: -webkit-radial-gradient(white, rgba(49, 58, 226, 0.1));
+    background: -moz-radial-gradient(white, rgba(49, 58, 226, 0.1));
+    background: -o-radial-gradient(white, rgba(49, 58, 226, 0.1));
+    background: radial-gradient(white, rgba(49, 58, 226, 0.1));
+    box-shadow: 0 0 1px rgba(255, 255, 255, 0.4) inset, 0 1px 3px rgba(0, 0, 0, 0.6) inset;
+  }
+  .mini li:active a {
+    display: block;
+    color: lightgrey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    padding: .2em;
+  }
+  .mini ul:target {
+    display: none;
+  }
+}
+
+/*_ _ _ _ _ _ _ _ _/ SECTION \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+section {
+  display: block;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+/*_ _ _ _ _ _ _ _ _/ ROW & COL \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+.row {
+  max-width: 960px;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  /*
+  	.entrantes
+  	{
+  		background: url(images/.jpg) no-repeat top right;
+  		background-size: 30%; 
+  	}
+  
+  	.ensaladas
+  	{
+  		background: url(images/Restaurante-River-Hall-Zaragoza-web-15.jpg) no-repeat top right;
+  		background-size: 30%; 
+  	}
+  
+  	.guisos
+  	{
+  		background: url(images/guisos.jpg) no-repeat top right;
+  		background-size: 30%; 
+  	}
+  
+  	.verduras
+  	{
+  		background: url(images/.jpg) no-repeat top right;
+  		background-size: 30%; 
+  	}
+  	.carne
+  	{
+  		background: url(images/carnes2.jpg) no-repeat top right;
+  		background-size: 30%; 
+  	}
+  	.pescado
+  	{
+  		background: url(images/.jpg) no-repeat top right;
+  		background-size: 30%; 
+  	}
+  	.postras
+  	{
+  		background: url(images/flan-individual.jpg) no-repeat top right;
+  		background-size: 30%; 
+  	}
+  
+  */
+}
+.row .col3 {
+  float: left;
+  margin: .5em 1.04167%;
+  width: 22.91667%;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+.row .col3 a {
+  font-family: "Alex Brush", Arial, sans-serif;
+  color: rgba(253, 223, 158, 0.9);
+  background: rgba(0, 0, 0, 0.5);
+  padding: .3em;
+  border-radius: 0 0  50% 0;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 2px 0 4px rgba(255, 255, 255, 0.8);
+}
+.row .col4 {
+  float: left;
+  margin: .1em 1.04167%;
+  width: 31.25%;
+}
+.row .col6 {
+  margin: 0 1.04167%;
+  width: 47.91667%;
+}
+.row .home a {
+  font-family: "Alex Brush", Arial, sans-serif;
+  color: rgba(253, 223, 158, 0.9);
+  font-size: 1.5em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 2px 0 4px rgba(255, 255, 255, 0.8);
+}
+.row h3 {
+  font-family: "Alex Brush", Arial, sans-serif;
+  color: rgba(253, 223, 158, 0.9);
+  font-size: 1.5em;
+  text-transform: capitalize;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.row .map {
+  width: 100%;
+  margin: 1.5em auto;
+}
+.row .map iframe {
+  width: 100%;
+  margin: 0 auto;
+}
+.row small {
+  display: block;
+}
+.row small a {
+  color: rgba(253, 223, 158, 0.9);
+  margin: .5em;
+  padding: 1em;
+  text-align: left;
+}
+.row .col8 {
+  margin: 1em auto;
+}
+.row .col8 p {
+  display: block;
+  margin: .5em 2%;
+  color: lightgrey;
+}
+.row .paper {
+  padding: 2em 1em;
+  margin: 0 0 0 .2em;
+  background: url(images/textured_paper.jpg);
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.row .paper h4 {
+  text-transform: capitalize;
+  font-size: 1.5em;
+  padding: 0 .5em  0em;
+  font-family: 'Alex Brush', Arial, sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.row .paper h4 a {
+  color: rgba(0, 0, 0, 0.7);
+}
+.row .paper li {
+  margin: 2%;
+  font-family: 'Alex Brush', Arial, sans-serif;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  position: relative;
+}
+.row .paper li p {
+  font-size: .8em;
+  text-transform: none;
+  padding: 1em;
+}
+.row .desplegado {
+  width: 150%;
+  position: relative;
+  z-index: 10000;
+  background: url(images/textured_paper.jpg);
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.4);
+}
+.row .vinos {
+  background: url(images/wine.jpg) no-repeat top right;
+  background-size: 30%;
+  display: block;
+}
+.row .especialidad {
+  /*margin: 1em 1.2em;*/
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(161, 164, 214, 0.8) inset, 0 2px 10px rgba(0, 0, 0, 0.4) inset;
+  /*a:before
+  {
+  	
+  	width: 15px;
+  	height:10px;
+  	display: inline-block;
+  	margin: 0 ;
+  	background: url(images/deco_l.png);
+  }*/
+}
+.row .especialidad h4 {
+  text-transform: capitalize;
+}
+.row .especialidad li {
+  text-align: left;
+}
+.row .especialidad a {
+  margin-left: .2em;
+  font-family: "Alex Brush", Arial, sans-serif;
+  color: rgba(253, 223, 158, 0.9);
+  font-size: 1.5em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+@media screen and (max-width: 43em) {
+  .row .especialidad {
+    width: 90%;
+    margin: 1em auto;
+  }
+  .row .especialidad ol {
+    margin: 0 auto;
+  }
+  .row .especialidad a {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 43em) {
+  .row .col1, .row .col2,
+  .row .col7, .row .col8,
+  .row .col9, .row .col10,
+  .row .col11, .row .col12 {
+    float: none;
+    margin: 0 1.04167%;
+    width: 97.91667%;
+  }
+  .row .col4, .row .col3 {
+    float: left;
+    margin: 1.04167%;
+    width: 47.90%;
+  }
+  .row .paper {
+    margin: 0 1.04167%;
+  }
+  .row .col6 {
+    float: none;
+    margin: 0 1.04167%;
+    /*width: 47.90%;*/
+  }
+}
+@media screen and (max-width: 29em) {
+  .row .col4, .row .col3 {
+    float: none;
+    margin: 1.04167%;
+    width: 97.91667%;
+  }
+  .row .paper {
+    margin: 0 1.04167%;
+  }
+}
+
+/*_ _ _ _ _ _ _ _ _/  FORM  \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+form {
+  display: block;
+  padding: 1em 3%;
+  background: #3d3d3d;
+}
+form ul {
+  width: 60%;
+  margin: 1em auto;
+}
+form ul li {
+  list-style: none;
+  margin-bottom: 1em;
+  color: #bbbbbb;
+  text-transform: capitalize;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+}
+form label {
+  font-size: 1.5em;
+}
+@media screen and (max-width: 43em) {
+  form ul {
+    width: 100%;
+    margin: .1em auto;
+  }
+  form input {
+    font-size: 1.5em;
+  }
+  form .actioner {
+    margin: 1em 0 0 1em;
+    padding: .5em;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    border-radius: 20px;
+  }
+}
+
+/*_ _ _ _ _ _ _ _ _/ GALERY \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+.galery {
+  background-size: cover;
+  height: 8em;
+  margin-top: .5em;
+}
+@media screen and (max-width: 29em) {
+  .galery {
+    height: 16em;
+    margin-top: 1em;
+  }
+}
+
+.salones {
+  background: url(images/classic.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.servicio {
+  background: url(images/servicio.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.cocina {
+  background: url(images/cocina.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.toilets {
+  background: url(images/toilets.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/*_ _ _ _ _ _ _ _ _/ HOME-INDEX \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+.home .col4 {
+  background-size: 60%;
+  min-height: 7em;
+}
+.home .col4 a {
+  font-family: "Alex Brush", Arial, sans-serif;
+  font-size: 1.6em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 2px 0 4px rgba(255, 255, 255, 0.4);
+  color: inherit;
+  display: block;
+  padding: 2% 20% 2% 2%;
+}
+
+.comida {
+  background: url(images/platoCarne.jpg) white no-repeat bottom right;
+}
+
+.postre {
+  background: url(images/mouse.jpg) white no-repeat bottom right;
+}
+
+.foto {
+  background: url(images/white.jpg) white no-repeat bottom right;
+}
+
+.contacto {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1em 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+.contacto ol {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: rgba(253, 223, 158, 0.9);
+}
+
+/*_ _ _ _ _ _ _ _ _/   FOOTER   \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+footer {
+  margin: 5%;
+  padding-bottom: .8em;
+}
+footer h3 {
+  margin-bottom: .2em;
+  font-family: "Alex Brush", Arial, sans-serif;
+  font-size: 2em;
+  text-transform: capitalize;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 2px 0 4px rgba(255, 255, 255, 0.8);
+}
+footer ul {
+  text-align: center;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+}
+footer ul li {
+  display: inline-block;
+  margin: .3em 2%;
+  padding: 15px;
+  font-size: 2em;
+  background-color: rgba(252, 208, 113, 0.9);
+  border-top: 1px solid rgba(132, 87, 147, 0.8);
+  border-right: 1px solid rgba(132, 87, 147, 0.8);
+  border-bottom: 1px solid rgba(51, 26, 59, 0.8);
+  border-left: 1px solid rgba(51, 26, 59, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+footer ul li a {
+  text-transform: capitalize;
+  text-decoration: none;
+  line-height: 2em;
+  color: lightgrey;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+@media screen and (max-width: 43em) {
+  footer ul li {
+    margin: 2em auto;
+  }
+}
+@media screen and (max-width: 43em) {
+  footer ul li {
+    margin: .5em 1%;
+  }
+}
+footer ul li:hover {
+  background-color: rgba(49, 58, 226, 0.1);
+}
+footer .notice {
+  width: 100%;
+  height: 10em;
+  background: rgba(254, 238, 203, 0.9);
+  float: right;
+}
+
+/*_ _ _ _ _ _ _ _ _/   SOCIAL-FONTELLO   \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?9998728#fontello') format('svg');
+  }
+}*/
+[class^="iconfont"]:before, [class*=" iconfont"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
+}
+
+.iconfont {
+  text-decoration: none;
+}
+
+.iconfont:before {
+  font-family: "fontello";
+  display: inline-block;
+  margin-right: 0.5em;
+  /*text-shadow: inset -3px 2px 3px rgba(0,0,0,.9);----------???---*/
+}
+
+/*.iconfont.down-dir:before { content: '\e800'; } /* '' */
+/*.iconfont.accessibility:before { content: '\e808'; } /* '' */
+.iconfont.mini:before {
+  content: '\e801';
+  /*color: $color_text_body;*/
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 25% 25% 0 0;
+}
+
+/* '' */
+/*.iconfont.wifi:before { content: '\e807'; } /* '' */
+/*.iconfont.reply:before { content: '\e802'; } /* '' */
+.iconfont.twitter:before {
+  content: '\e805';
+  font-size: 125%;
+  margin-right: 0.2em;
+  text-indent: -5px;
+}
+
+/* '' */
+.iconfont.facebook:before {
+  content: '\e804';
+}
+
+/* '' */
+.iconfont.googleplus:before {
+  content: '\e803';
+}
+
+/* '' */
+.iconfont.mail:before {
+  content: '\e806';
+  text-indent: 5px;
+}
+
+/* '' */
+/*_ _ _ _ _ _ _ _ _/    EXTRAS    \_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ */
+.develop {
+  margin: .7em auto;
+  height: 2em;
+  padding: .5em .5em;
+  background: rgba(254, 238, 203, 0.9);
+  color: #6d6d6d;
+}
+.develop .copyrigth {
+  display: inline-block;
+  text-align: left;
+  text-transform: capitalize;
+}
+.develop .copyrigth span {
+  font-size: 1.2em;
+  margin-left: .5em;
+  padding-left: .5em;
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 430px) {
+  .develop .copyrigth span {
+    display: block;
+    padding: .5em auto;
+  }
+}
+.develop .development {
+  display: inline;
+  float: right;
+  margin: .2em auto;
+  border-left: 15px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+  border-top: 4px solid rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+}
+.develop .development a {
+  text-transform: capitalize;
+  margin-right: .2em;
+  padding: 1em;
+  color: inherit;
+}
+@media screen and (max-width: 660px) {
+  .develop .development {
+    position: relative;
+    right: 10px;
+    bottom: -50px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .develop .development {
+    position: relative;
+    top: 60px;
+    right: 3px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .develop {
+    height: 3em;
+  }
+}
+
+.boton {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.2em;
+  max-width: 40px;
+  color: #FFF;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  height: 30px;
+  line-height: 2em;
+  padding: .5em 1em;
+  background: -webkit-gradient(radial, 0 0, 0 100%, from(white), to(#3f3f3f));
+  background: -webkit-radial-gradient(white, #3f3f3f);
+  background: -moz-radial-gradient(white, #3f3f3f);
+  background: -o-radial-gradient(white, #3f3f3f);
+  background: radial-gradient(white, #3f3f3f);
+  border-radius: 3px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: -3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.boton a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  text-transform: uppercase;
+}
+
+.boton:active {
+  border-right: 1px solid rgba(0, 0, 0, 0.9);
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  line-height: 34px;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.4) inset, 0 1px 3px rgba(0, 0, 0, 0.6) inset;
+}
+
+.contact {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  line-height: 2em;
+  max-width: 200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: .5em;
+  height: 40px;
+  padding: 10px 0;
+  background: -webkit-gradient(radial, 0 0, 0 100%, from(white), to(#aac3aa));
+  background: -webkit-radial-gradient(white, #aac3aa);
+  background: -moz-radial-gradient(white, #aac3aa);
+  background: -o-radial-gradient(white, #aac3aa);
+  background: radial-gradient(white, #aac3aa);
+  border-radius: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: -3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.contact a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: lightgrey;
+}
+@media screen and (min-width: 29em) {
+  .contact {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .foto {
+    float: none;
+    margin: 1.04167%;
+    width: 97.91667% !important;
+  }
+}
+@media screen and (max-width: 29em) {
+  .social.col6 {
+    display: block;
+    float: none;
+    margin: 1.04167%;
+    width: 97.91667%;
+  }
+}
+@media screen and (max-width: 780px) {
+  footer ul {
+    display: inline-block;
+  }
+  footer ul li {
+    float: right;
+  }
+}
+/*_ _ _ _ _ _ _ /  bloques: \ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ 
+
+
+LOGO - NAV - SECTION - ROL & COL - FORM - GALERY - HOME-INDEX - FOOTER - SOCIAL-FONTELLO - EXTRAS - _TOP - _BOTTOM   
+*/

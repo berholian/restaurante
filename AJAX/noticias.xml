@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+
+	<news leido="si">
+		<title></title>
+		<description></description>
+	</news>
+
+	<news leido="si">
+		<title></title>
+		<description></description>
+	</news>
+
+	<news leido="no">
+		<title></title>
+		<description></description>
+	</news>
+
+	<news leido="no">
+		<title></title>
+		<description></description>
+	</news>
+	
+	<news leido="no">
+		<title></title>
+		<description></description>
+	</news>
+
+</data>
